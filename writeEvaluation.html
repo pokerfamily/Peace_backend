@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>对已完成项目填写评价</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="css/security.css">
+		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+	</head>
+
+	<body>
+		<!-- header -->
+		<header>
+			<div class="container">
+				<div class="head-center">
+					<div id="logo">
+					</div>
+					<div class="siteinfo hidden-xs">
+						<i></i>
+						<h2>和平新技术研究院</h2>
+					</div>
+					<div class="hd-right">
+						<div id="info">
+							<div class="regsiter">
+								<i></i><span>用户名</span><span>(企业客户)</span>
+							</div>
+							<div class="dropdown personal-info">
+								<i></i>
+								<span data-toggle="dropdown" class="dropdown-toggle">个人信息<strong class="caret"></strong></span>
+								<ul class="dropdown-menu">
+										<li>
+											<a href="#">查看个人信息</a>
+										</li>
+										<li>
+											<a href="#">子功能</a>
+										</li>
+										<li>
+											<a href="#">子功能</a>
+										</li>
+									</ul>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+
+		</header>
+
+		<!--主要内容-->
+		<div class="container main-container">
+			<div class="row">
+				<div class="col-md-2 column sidebar">
+					<ul class="nav nav-pills nav-stacked">
+					   <li class="active"><a href="#">信息管理</a></li>
+					   <ul class="nav nav-pills nav-stacked sub-menu">
+						   <li><a href="#">查看企业信息</a></li>
+						   <li><a href="#">编辑企业信息</a></li>
+						   <li><a href="securityManagement.html">账号安全管理</a></li>
+					   </ul>
+					   <li class="active"><a href="#">需求方案管理</a></li>
+					   <ul class="nav nav-pills nav-stacked sub-menu">
+					   		<li><a href="writePlan.html">需求方案发布</a></li>
+						   <li><a href="showPlan.html">查看方案需求</a></li>
+						   <li><a href="showSolution.html">查看建议项目方案</a></li>
+						   <li><a href="writePlan.html">删除或修改需求方案</a></li>
+					   </ul>
+					   <li class="active"><a href="#">项目管理</a></li>
+					   <ul class="nav nav-pills nav-stacked sub-menu">
+						   <li><a href="projectProgress.html">查看项目进度</a></li>
+						   <li><a href="systemForm.html">系统试用问题反馈</a></li>
+						   <li><a href="projectForm.html">项目评价</a></li>
+						   <li><a href="">查看客户与平台的合同</a></li>
+					   </ul>
+					</ul>
+				</div>
+				<div class="col-md-10 column">
+					<div class="row">
+						<div class="breadcrumb col-xs-12">
+							<ul>	
+								<li><b>项目管理</b></li>
+								<li><b> >已完成项目列表</b></li>
+								<li><b> >对此项目填写评价</b></li>
+							</ul>
+						</div>
+		                <div class="col-md-11 col-md-offset-1 feedback">
+							<div class="dropdown col-md-2">
+								<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">给此项目打分
+   								<span class="caret"></span>
+									</button>
+								<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+									<li role='presentation'><a role="menuitem" tabindex="-1" href="#">非常满意</a></li>
+									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">满意</a></li>
+									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">一般</a></li>
+									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">较差</a></li>
+									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">不满意</a></li>
+								</ul>
+							</div>
+		                	<textarea class="col-md-9 col-md-offset-1" name="" id="" cols="30" rows="15" placeholder="您可以在这里填写对已完成项目的评价信息"></textarea>
+		                	<input type="submit" class="submit col-sm-2 col-sm-offset-4">
+		                	<a href="projectForm.html">
+		                		<input type="button" class="cancel col-sm-2 col-sm-offset-2" value="取消">	
+		                	</a>
+		                	
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+
+		<script>
+			$('.carousel').carousel({
+				interval: 2000
+			})
+		</script>
+	
+	<script type="text/javascript" src="js/back.js"></script>
+	</body>
+
+</html>

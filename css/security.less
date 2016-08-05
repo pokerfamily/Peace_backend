@@ -1,0 +1,393 @@
+/*后台界面*/
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "微软雅黑" !important;
+  margin: 0 auto !important;
+}
+/*wcy*/
+.dropdown-menu {
+    display: none ;
+    position: absolute ;
+    background-color: #f9f9f9  ;
+    min-width: 100% ;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2) ;
+}
+
+
+.dropdown-menu > li > a,.dropdown-menu > li > a:hover {
+    padding: 10px 10px ;
+    color: #ffffff ;
+    font-size: 18px ;
+    text-decoration: none ;
+    display: block;   
+}
+
+.navbar {
+	margin-bottom: 20px;
+ }
+
+.col-md-2 {
+
+	margin: 0% 1.75% 0% 0%;
+  }
+
+	/*header #info {
+		width: 150px;
+		height: 35px;
+		margin: 20px 0 0 0;
+		float: left;
+		margin-top: 10px;
+	}*/
+	.pull-right > .dropdown-menu {
+		right: 0;
+		left: auto;
+		margin-top: 0px; padding-top: 0px; padding-bottom: 0px;
+	}
+	.open > .dropdown-menu {
+		display: block;
+		padding-top: 0px; margin-top: 0px; padding-bottom: 0px;
+	}
+/*header begin oylp*/
+header {
+  width: 100%;
+  height: 70px;
+  background: #1A69C5;
+}
+header:after {
+  display: block;
+  content: '';
+  clear: both;
+}
+.head-center {
+  margin: 0 auto;
+}
+header #logo {
+  background: url(../img/BackStage/xkjWLogo.png);
+  background-size: 100% 100%;
+  width: 95px;
+  height: 55px;
+  margin: 7px 0 0 0;
+  float: left;
+}
+header .siteinfo {
+  margin: 5px 0 0 32px;
+  height: 60px;
+  width: 250px;
+  float: left;
+}
+header .siteinfo i {
+  display: block;
+  background: url(../img/BackStage/jdWLogo.png);
+  background-size: 100% 100%;
+  width: 125px;
+  height: 33px;
+}
+header .siteinfo h2 {
+  font-size: 22px;
+  color: #FFFFFF;
+  font-weight: bolder;
+  margin: 0;
+}
+header .hd-right {
+  float: right;
+}
+header #info {
+  width: 250px;
+  height: 30px;
+  margin: 21px 0 0 0;
+  float: left;
+  color: #FFFFFF;
+}
+header .hd-right .regsiter{
+	float: left;
+}
+header .hd-right .regsiter i{
+	display: inline-block;
+	width: 28px;
+	height: 28px;
+	vertical-align: bottom;
+	margin-right: 5px;
+	background: url(../img/BackStage/ren.png) no-repeat center center;
+	background-size: 100% 100%;
+}
+header .hd-right .personal-info{
+	display: block;
+	float: right;
+	cursor: pointer;
+}
+header .hd-right .personal-info i{
+	display: inline-block;
+	width: 28px;
+	height: 28px;
+	vertical-align: bottom;
+	margin-right: 5px;
+	background: url(../img/BackStage/info.png) no-repeat center center;
+	background-size: 100% 100%;
+}
+header .hd-right .personal-info a{
+	color: #1A69C5 !important;
+}
+/*main-container begin*/
+.main-container{
+	width: 100%;
+}
+/*sidebar begin*/
+
+.sidebar{
+	z-index: 1;
+	padding: 0;
+	background: #F9F9F9;
+	box-shadow: 3px 3px 3px #DDDDDD;
+}
+.sidebar ul{
+	width: 100%;
+	
+}
+.sidebar ul li a{
+	border-radius: 0;
+}
+/*.sub-menu li a{
+	padding-left: 40px;
+}*/
+/*footer begin*/
+footer {
+  height: auto;
+  background: #3E3E40;
+}
+.foot-left {
+  width: 66.66667%;
+  width: 288px;
+  background: darkcyan;
+}
+.row21,
+.row22,
+.row23 {
+  font-family: "微软雅黑";
+  font-size: 1.5em;
+  text-align: right;
+}
+.row21 {
+  margin-top: 45px;
+}
+.link-2 {
+  font-weight: 550;
+  color: #FFFFFF;
+}
+.row22 {
+  margin-top: 35px;
+}
+.row23 {
+  margin-top: 24px ;
+}
+.row3 {
+  margin-right: 0px;
+}
+.link-3 {
+  color: #dfdcdc;
+  font-weight: 450;
+}
+.foot2 {
+  height: 14%;
+  line-height: 40px;
+  text-align: center;
+  color: #DFDCDC;
+  font-weight: bold;
+  margin-top: 1% ;
+}
+.qr {
+  width: 167px;
+  height: 167px;
+  margin-top: 48px;
+}
+.qr-text {
+  width: 40%;
+  margin-left: 30%;
+  color: #DFDCDC;
+ /* font-weight: bold;*/
+  text-align: center;
+}
+
+/*
+信息管理-帐号安全管理
+ */
+@letter_color:#337ab7;
+@hover_color:#0f67b3;
+.breadcrumb{
+  background: #ffffff !important;
+  margin: 5px auto;
+  margin-bottom: 5px !important;
+  padding: 8px 15px 0 0 ;
+}
+
+.breadcrumb ul li{
+  float: left;
+  list-style: none;
+  /* margin-left: 10px; */
+}
+.pagination{
+  display:table;
+  margin:50px auto;
+}
+.fl{
+  float:left;
+}
+.fr{
+  float:right;
+}
+.password_validate{
+  
+  .tips{
+    color:red;
+  }
+  .confirm_btn{
+    margin-left: 50px;
+  }
+  .cancel_btn{
+    margin-right: 50px;
+  }
+}
+.password_validate,.user-form{
+  margin-top: 50px;
+  font-size: 14px;
+  line-height: 30px;
+  color:#000;
+}
+.old_pwd,.new_pwd,.repeat_pwd,.input-register,.input-short{
+  width:60%;
+  float: right;
+  border:1px solid #ddd;
+  text-indent: 1rem;
+}
+.confirm_btn,.cancel_btn,.registerSubmit{
+    width:90px;
+    height:35px;
+    margin-top: 20px;
+    background-color: @letter_color;
+    color:#fff;
+    border:0;
+
+  }
+.form-list{
+  position:relative;
+  .input-code{
+    position:absolute;
+    left:105%;
+    height:30px;
+    line-height: 30px;
+    width:90px;
+  }  
+}
+.registerSubmit{
+  display:block;
+  width:100%;
+  margin:0 auto;
+}
+.needs{
+  h1{
+    font-size: 22px;
+  }
+  ul{
+   border:1px solid #ddd; 
+  }
+  ul li{
+  list-style: none;
+  float:left;
+  height:50px;
+  line-height: 50px;
+  border:1px solid #ddd;
+  } 
+  .menu{
+    width:100%;
+  }
+  .dropdown button{
+    display: block;
+    width: 100%;
+    height: 50px;
+    border:0;
+  }
+  .dropdown-menu li{
+    float:none;
+    height:40px;
+    a{
+      text-align: center;
+      color:#000;
+      font-size: 14px;
+    }
+  }
+  .col-md-8{
+    padding:0;
+  }
+  input,textarea{
+    display:block;
+    width:100%;
+    height: 100%;
+    border:0;
+    text-indent: 1rem;
+    background-color: #eee;
+  }
+  .description_ex,.description,textarea{
+    min-height:200px;
+    height:auto;
+  }
+  textarea{
+    line-height: 30px;
+  }
+  .submit{
+    margin-top: 30px;
+    height:40px;
+    background-color: @letter_color;
+    color:#fff;
+  }
+  .show_title,.show_phone,.show_name,{
+    text-indent: 1rem;
+  }
+  .show_textarea{
+    padding:0 1rem;
+    word-wrap: break-word;
+    line-height: 30px;
+  }
+}
+.solution,.system{
+  margin-top: 30px;
+  ul li{
+    list-style: none;
+    border:1px solid #ddd;
+    height:35px;
+    line-height:35px;
+    a{
+      display: block;
+      width:100%;
+      height:100%;
+    }
+    .has_solution{
+      color:red;
+    }
+  }
+}
+.feedback{
+  margin-top: 30px;
+  .dropdown-menu li{
+    height:40px;
+    a{
+      color:#000;
+      font-size: 14px;
+    }
+  }
+  .open>.dropdown-menu {
+    left:15px;
+  }
+  .submit,.cancel{
+    display:block;
+    height:35px;
+    margin-top: 30px; 
+    line-height: 35px;
+    color:#fff;
+    background-color: @letter_color;
+  }
+}
+.confirm_btn:hover, .cancel_btn:hover, .submit:hover, .cancel:hover{
+  background-color: @hover_color;
+}
