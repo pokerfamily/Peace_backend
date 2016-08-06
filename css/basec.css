@@ -1,0 +1,287 @@
+/*后台界面*/
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "微软雅黑" !important;
+  margin: 0 auto !important;
+}
+.floatRight{
+	float: right;
+}
+.afterClear:after{
+	content: '';
+	clear: both;
+	display: block;
+}
+/*wcy*/
+.dropdown-menu {
+    display: none ;
+    position: absolute ;
+    background-color: #f9f9f9  ;
+    min-width: 100% ;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2) ;
+}
+
+
+.dropdown-menu > li > a,.dropdown-menu > li > a:hover {
+    padding: 10px 10px ;
+    color: #ffffff ;
+    font-size: 18px ;
+    text-decoration: none ;
+    display: block;   
+}
+
+.navbar {
+	margin-bottom: 20px;
+ }
+
+.col-md-2 {
+
+	margin: 0% 1.75% 0% 0%;
+  }
+
+	header #info {
+		width: 300px;
+		height: 35px;
+		margin: 20px 0 0 0;
+		float: left;
+		margin-top: 10px;
+	}
+	.pull-right > .dropdown-menu {
+		right: 0;
+		left: auto;
+		margin-top: 0px; padding-top: 0px; padding-bottom: 0px;
+	}
+	.open > .dropdown-menu {
+		display: block;
+		padding-top: 0px; margin-top: 0px; padding-bottom: 0px;
+	}
+/*header begin oylp*/
+header {
+  width: 100%;
+  height: 70px;
+  background: #1A69C5;
+}
+header:after {
+  display: block;
+  content: '';
+  clear: both;
+}
+.head-center {
+  margin: 0 auto;
+}
+header #logo {
+  background: url(../img/BackStage/xkjWLogo.png);
+  background-size: 100% 100%;
+  width: 95px;
+  height: 55px;
+  margin: 7px 0 0 0;
+  float: left;
+}
+header .siteinfo {
+  margin: 5px 0 0 32px;
+  height: 60px;
+  width: 250px;
+  float: left;
+}
+header .siteinfo i {
+  display: block;
+  background: url(../img/BackStage/jdWLogo.png);
+  background-size: 100% 100%;
+  width: 125px;
+  height: 33px;
+}
+header .siteinfo h2 {
+  font-size: 22px;
+  color: #FFFFFF;
+  font-weight: bolder;
+  margin: 0;
+}
+header .hd-right {
+  float: right;
+}
+header #info {
+  width: 300px;
+  height: 30px;
+  margin: 21px 0 0 0;
+  float: left;
+  color: #FFFFFF;
+}
+header .hd-right .regsiter{
+	float: left;
+}
+header .hd-right .regsiter i{
+	display: inline-block;
+	width: 28px;
+	height: 28px;
+	vertical-align: bottom;
+	margin-right: 5px;
+	background: url(../img/BackStage/ren.png) no-repeat center center;
+	background-size: 100% 100%;
+}
+header .hd-right .personal-info{
+	display: block;
+	float: right;
+	cursor: pointer;
+}
+header .hd-right .personal-info i{
+	display: inline-block;
+	width: 28px;
+	height: 28px;
+	vertical-align: bottom;
+	margin-right: 5px;
+	background: url(../img/BackStage/info.png) no-repeat center center;
+	background-size: 100% 100%;
+}
+header .hd-right .personal-info a{
+	color: #1A69C5 !important;
+}
+/*main-container begin*/
+.main-container{
+	width: 100%;
+}
+/*sidebar begin*/
+
+.sidebar{
+	z-index: 1;
+	padding: 0;
+	background: #F9F9F9;
+	box-shadow: 3px 3px 3px #DDDDDD;
+}
+.sidebar ul{
+	width: 100%;
+	
+}
+.sidebar ul li a{
+	border-radius: 0;
+}
+
+/*i-handle begin*/
+.i-handle{
+	width: 100%;
+	height: 50px;
+}
+.i-handle label{
+	width: 60px;
+	height: 35px;
+	background: #1A69C5;
+	color: #FFFFFF;
+	line-height: 35px;
+	border-radius: 8px;
+	margin: 7px 10px 0 0;
+	text-align: center;
+	font-size: 14px;
+}
+.i-handle .form-control{
+	display: inline-block;
+	width: 200px;
+}
+/*table*/
+table thead{
+	background: #1A69C5;
+	color: #FFFFFF;
+}
+table thead tr th{
+	text-align: center;
+}
+
+/*baseInfo 基本信息页面*/
+.baseInfo h2,.proInfo h2{
+	padding-bottom: 5px;
+	border-bottom: 2px solid #22B14C;
+	font-size: 20px;
+}
+.baseInfo table,.proInfo table{
+	width: 96%;
+	margin-left: 20px;
+}
+.baseInfo table td,.proInfo table td{
+	height: 50px;
+	font-size: 16px;
+	vertical-align:inherit !important;
+}
+.baseInfo table td:first-child,.proInfo table td:first-child{
+	width: 220px;
+	text-align: right;
+}
+.hd-img{
+	width: 150px;
+	height: 200px;
+	border: 1px solid #eee;
+	background: #EEEEEE;
+	margin: 0 auto;
+}
+/*修改按钮*/
+.modify-btn{
+	width: 100%;
+	text-align: center;
+	margin-bottom: 40px;
+}
+/*修改页面*/
+.baseInfo table input,.proInfo table input{
+	width: 200px;
+	height: 35px;
+	border-radius: 8px;
+	border: 1px solid #DDDDDD;
+	padding-left: 8px;
+}
+.baseInfo table strong,.proInfo table strong{
+	color: #FFCE43;
+	font-size: 14px;
+	margin-left: 10px;
+}
+.control-label{
+	font-size: 16px;
+}
+/*邀请页面*/
+.invita h2{
+	font-size: 20px;
+	padding-bottom: 8px;
+	border-bottom: 2px solid #22B14C;
+}
+.invita .list-group li{
+	cursor: pointer;
+}
+.invita .glyphicon{
+	font-size: 20px;
+	margin-right: 10px;
+}
+.list-group-item:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+/*方案详情界面*/
+.solution{
+	background: #F9F9F9;
+	padding: 10px 30px;
+	margin-top: 20px;
+	border-radius: 8px;
+}
+.solution h2{
+	text-align: center;
+	margin-top: 40px;
+}
+.solution .author-name{
+	height: 50px;
+	width: 100%;
+	font-size: 16px;
+	text-align: right;
+}
+.solution p{
+	margin-bottom: 10px;
+	text-indent: 20px;
+	font-size: 16px;
+}
+.review{
+	background: #F9F9F9;
+	margin-top: 20px;
+	padding: 10px 0;
+	margin-bottom: 20px;
+	border-radius: 8px;
+}
+.review .btn-wrap{
+	text-align: center;
+}

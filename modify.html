@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>基本信息</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="css/basec.css">
+		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+
+	</head>
+
+	<body>
+		<!-- header -->
+		<header>
+			<div class="container">
+				<div class="head-center">
+					<div id="logo">
+					</div>
+					<div class="siteinfo hidden-xs">
+						<i></i>
+						<h2>和平新技术研究院</h2>
+					</div>
+					<div class="hd-right">
+						<div id="info">
+							<div class="regsiter">
+								<i></i><span>用户名（专家用户测试）</span>
+							</div>
+							<div class="dropdown personal-info">
+								<i></i>
+								<span data-toggle="dropdown" class="dropdown-toggle">个人信息<strong class="caret"></strong></span>
+								<ul class="dropdown-menu">
+										<li>
+											<a href="baseInfo.html">查看个人信息</a>
+										</li>
+										<li>
+											<a href="Invitation.html">邀请信息</a>
+										</li>
+									</ul>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+
+		</header>
+
+		<!--主要内容-->
+		<div class="container main-container">
+			<div class="row">
+				<div class="col-md-2 column sidebar">
+					<ul class="nav nav-pills nav-stacked">
+					   <li class="active"><a href="#">个人信息</a></li>
+					   <ul class="nav nav-pills nav-stacked sub-menu">
+						   <li><a href="baseInfo.html">查看个人信息</a></li>
+						   <li><a href="modify.html">完善个人资料</a></li>
+						   <li><a href="#">账号安全管理</a></li>
+					   </ul>
+					   <li class="active"><a href="#">项目查询</a></li>
+					   <ul class="nav nav-pills nav-stacked sub-menu">
+						   <li><a href="index.html">历史项目查询</a></li>
+						   <li><a href="index.html">查看最新项目</a></li>
+						   <li><a href="index.html">已报名项目</a></li>
+					   </ul>
+					   <li class="active"><a href="#">已申报项目</a></li>
+					   <ul class="nav nav-pills nav-stacked sub-menu">
+						   <li><a href="index.html">已入选项目</a></li>
+						   <li><a href="index.html">未选中项目</a></li>
+					   </ul>
+					   <li class="active"><a href="#">解决方案评审</a></li>
+					   <ul class="nav nav-pills nav-stacked sub-menu">
+						   <li><a href="index.html">对专家的技术方案评审</a></li>
+						   <li><a href="index.html">对企业的实施方案评审</a></li>
+					   </ul>
+					</ul>
+				</div>
+				<div class="col-md-10 column content">
+					<div class="baseInfo">
+						<h2>基本信息</h2>
+						<div class="row ">
+							<div class="col-md-9 column">
+								<form class="form-horizontal" role="form">
+								   <div class="form-group">
+								      <label for="firstname" class="col-sm-2 control-label">姓名</label>
+								      <div class="col-sm-10">
+								         <input type="text" class="form-control" id="firstname" 
+								            placeholder="请输入名字">
+								      </div>
+								   </div>
+								   <div class="form-group">
+								      <label for="lastname" class="col-sm-2 control-label">性别</label>
+								      <div class="col-sm-10">
+								         <select class="form-control">
+									         <option>男</option>
+									         <option>女</option>
+									     </select>
+								      </div>
+								   </div>
+								   <div class="form-group">
+								      <label for="firstname" class="col-sm-2 control-label">电话</label>
+								      <div class="col-sm-10">
+								         <input type="text" class="form-control" id="firstname" 
+								            placeholder="请输入电话">
+								      </div>
+								   </div>
+								   <div class="form-group">
+								      <label for="lastname" class="col-sm-2 control-label">邮箱</label>
+								      <div class="col-sm-10">
+								         <input type="text" class="form-control" id="lastname" 
+								            placeholder="请输入邮箱">
+								      </div>
+								   </div>
+								   <div class="form-group">
+								      <label for="firstname" class="col-sm-2 control-label">银行卡号</label>
+								      <div class="col-sm-10">
+								         <input type="text" class="form-control" id="firstname" 
+								            placeholder="请输入银行卡号">
+								      </div>
+								   </div>
+								</form>
+
+							</div>
+							<div class="col-md-3 column">
+								<div class="hd-img">
+									
+								</div>
+							</div>
+						</div>
+						
+					</div>
+					<div class="proInfo">
+						<h2>专业信息</h2>
+						<form class="form-horizontal" role="form">
+								   <div class="form-group">
+								      <label for="firstname" class="col-sm-2 control-label">专业领域</label>
+								      <div class="col-sm-10">
+								         <input type="text" class="form-control" id="firstname" 
+								            placeholder="请输入专业领域">
+								      </div>
+								   </div>
+								   <div class="form-group">
+								      <label for="lastname" class="col-sm-2 control-label">专业技能以及专业技能认证</label>
+								      <div class="col-sm-10">
+								         <input type="text" class="form-control" id="firstname" 
+								            placeholder="请输入专业技能以及专业认证">
+								      </div>
+								   </div>
+								   <div class="form-group">
+								      <label for="firstname" class="col-sm-2 control-label">报名项目次数</label>
+								      <div class="col-sm-10">
+								         <input type="text" class="form-control" id="firstname" 
+								            placeholder="请输入报名项目次数">
+								      </div>
+								   </div>
+								   <div class="form-group">
+								      <label for="lastname" class="col-sm-2 control-label">项目入选次数</label>
+								      <div class="col-sm-10">
+								         <input type="text" class="form-control" id="lastname" 
+								            placeholder="请输入项目入选次数">
+								      </div>
+								   </div>
+								   <div class="form-group">
+								      <label for="firstname" class="col-sm-2 control-label">解决方案被选中次数</label>
+								      <div class="col-sm-10">
+								         <input type="text" class="form-control" id="firstname" 
+								            placeholder="请输入解决方案被选中次数">
+								      </div>
+								   </div>
+						</form>
+					</div>
+					<div class="modify-btn">
+						<button type="button" class="btn btn-info">修改</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- footer-->
+		
+		<script>
+			$(document).ready(function(){
+			 var minHeight = $(window).height()-70;
+			 var contentHeight = $(".main-container").height();
+			 if(minHeight < contentHeight){
+			 	$(".sidebar").css("height",contentHeight);
+			 }else{
+			 	$(".sidebar").css("height",minHeight);
+			 }
+			})
+		</script>
+	</body>
+
+</html>
