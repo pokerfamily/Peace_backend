@@ -10,6 +10,7 @@
 		<link rel="stylesheet" type="text/css" href="css/security.css">
 		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
 		<script type="text/javascript" src="js/bootstrap.js"></script>
+		<script type="text/javascript" src="ckeditor/ckeditor.js"></script>
 	</head>
 
 	<body>
@@ -58,8 +59,8 @@
 					<ul class="nav nav-pills nav-stacked">
 					   <li class="active"><a href="#"><i class="icon-user"></i>信息管理</a></li>
 					   <ul class="nav nav-pills nav-stacked sub-menu">
-						   <li><a href="#">查看企业信息</a></li>
-						   <li><a href="#">编辑企业信息</a></li>
+						   <li><a href="showInfo.html">查看企业客户信息</a></li>
+						   <li><a href="writeInfo.html">编辑企业客户信息</a></li>
 						   <li><a href="securityManagement.html">账号安全管理</a></li>
 					   </ul>
 					   <li class="active"><a href="#"><i class="icon-file-alt"></i>需求方案管理</a></li>
@@ -74,7 +75,7 @@
 						   <li><a href="projectProgress.html">查看项目进度</a></li>
 						   <li><a href="systemForm.html">系统试用问题反馈</a></li>
 						   <li><a href="projectForm.html">项目评价</a></li>
-						   <li><a href="">查看客户与平台的合同</a></li>
+						   <li><a href="showContract.html">查看客户与平台的合同</a></li>
 					   </ul>
 					</ul>
 				</div>
@@ -102,18 +103,18 @@
 									
 								</li>
 								<li class="col-md-4 col-xs-12">标题</li>
-								<li class="col-md-8 col-xs-12"><input type="text" class="title"></li>
+								<li class="col-md-8 col-xs-12"><input type="text" class="title" placeholder="请输入需求方案的标题"></li>
 								<li class="col-md-4 col-xs-12">姓名</li>
-								<li class="col-md-8 col-xs-12"><input type="text" class="name"></li>
+								<li class="col-md-8 col-xs-12"><input type="text" class="name" placeholder="请输入您的姓名"></li>
 								<li class="col-md-4 col-xs-12">联系电话</li>
-								<li class="col-md-8 col-xs-12"><input type="text" class="phone"></li>	
-								<li class="col-md-4 col-xs-12 description_ex">需求描述（文字描述、图片描述、附件）</li>
-								<li class="col-md-8 col-xs-12 description"><textarea name="" id=""></textarea></li>
+								<li class="col-md-8 col-xs-12"><input type="text" class="phone" placeholder="请输入您的联系电话"></li>	
+								<li class="col-xs-12">需求描述（文字描述、图片描述、附件）</li>
+								<textarea name="need" class="col-xs-12 need_editor" cols="30" rows="10"></textarea>
+								<script type='text/javascript'>CKEDITOR.replace('need');</script>
 		                	</ul>
 		                	<input type="submit" class="submit col-xs-12" value="提交">
 						</div>
 					</div>
-					
 				</div>
 			</div>
 		</div>

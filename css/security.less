@@ -7,6 +7,8 @@ body {
   font-family: "微软雅黑" !important;
   margin: 0 auto !important;
 }
+@letter_color:#337ab7;
+@hover_color:#0f67b3;
 /*wcy*/
 .dropdown-menu {
     display: none ;
@@ -95,7 +97,7 @@ header .hd-right {
   float: right;
 }
 header #info {
-  width: 250px;
+  width: 300px;
   height: 30px;
   margin: 21px 0 0 0;
   float: left;
@@ -212,17 +214,51 @@ footer {
  /* font-weight: bold;*/
   text-align: center;
 }
-
+/*baseInfo 基本信息页面*/
+.baseInfo h2,.proInfo h2{
+  padding-bottom: 5px;
+  border-bottom: 2px solid @letter_color;
+  font-size: 20px;
+}
+.baseInfo table,.proInfo table{
+  width: 96%;
+  margin-left: 20px;
+}
+.baseInfo table td,.proInfo table td{
+  height: 50px;
+  font-size: 16px;
+  vertical-align:inherit !important;
+}
+.baseInfo table td:first-child,.proInfo table td:first-child{
+  width: 220px;
+  text-align: right;
+}
+.hd-img{
+  width: 150px;
+  height: 200px;
+  border: 1px solid #eee;
+  background: #EEEEEE;
+  margin: 0 auto;
+}
+.modify-btn{
+  margin-bottom: 100px;
+  
+  .btn-info{
+    background-color: @letter_color;
+  }
+}
 /*
 信息管理-帐号安全管理
  */
-@letter_color:#337ab7;
-@hover_color:#0f67b3;
+.append_p{
+  color:red;
+  margin: 10px 0 0;
+}
 .breadcrumb{
   background: #ffffff !important;
   margin: 5px auto;
   margin-bottom: 5px !important;
-  padding: 8px 15px 0 0 ;
+  //padding: 8px 15px 0 0 ;
 }
 
 .breadcrumb ul li{
@@ -292,7 +328,7 @@ footer {
 信息管理-需求方案
  */
 .needs{
-  margin: 30px auto 100px;
+  margin: 0 auto 100px;
   h1{
     font-size: 22px;
   }
@@ -341,7 +377,7 @@ footer {
     height: 100%;
     border:0;
     text-indent: 1rem;
-    background-color: #eee;
+    //background-color: #fcf8e3;
   }
   .description_ex,.description,textarea{
     min-height:200px;
@@ -389,12 +425,12 @@ footer {
 信息管理-解决方案方案
  */
 .solution,.system{
-  margin: 30px auto 100px;
+  margin: 0 auto 100px;
   ul li{
     list-style: none;
     border:1px solid #ddd;
-    height:35px;
-    line-height:35px;
+    height:45px;
+    line-height:45px;
     a{
       display: block;
       width:100%;
@@ -409,7 +445,7 @@ footer {
 信息管理-反馈
  */
 .feedback{
-  margin: 30px auto 100px;
+  //margin: 0 auto 100px;
   .dropdown-menu li{
     height:40px;
     a{
@@ -436,5 +472,5 @@ footer {
 信息管理-项目
  */
 .project{
-  margin: 30px auto 100px;
+  margin: 0 auto 100px;
 }

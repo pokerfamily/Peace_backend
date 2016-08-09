@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>编辑个人信息</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/security.css">
+		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+		<script type="text/javascript" src="js/back.js"></script>
+	</head>
+
+	<body>
+		<!-- header -->
+		<header>
+			<div class="container">
+				<div class="head-center">
+					<div id="logo">
+					</div>
+					<div class="siteinfo hidden-xs">
+						<i></i>
+						<h2>和平新技术研究院</h2>
+					</div>
+					<div class="hd-right">
+						<div id="info">
+							<div class="regsiter">
+								<i></i><span>用户名</span><span>(企业客户客服)</span>
+							</div>
+							<div class="dropdown personal-info">
+								<i></i>
+								<span data-toggle="dropdown" class="dropdown-toggle">个人信息<strong class="caret"></strong></span>
+								<ul class="dropdown-menu">
+										<li>
+											<a href="#">查看个人信息</a>
+										</li>
+										<li>
+											<a href="#">子功能</a>
+										</li>
+										<li>
+											<a href="#">子功能</a>
+										</li>
+									</ul>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+
+		</header>
+
+		<!--主要内容-->
+		<div class="container main-container">
+			<div class="row">
+				<div class="col-md-2 column sidebar">
+					<ul class="nav nav-pills nav-stacked">
+					   <li class="active"><a href="#">企业客户需求方案管理</a></li>
+					   <ul class="nav nav-pills nav-stacked sub-menu">
+						   <li><a href="customer_needForm.html">查看企业客户需求方案</a></li>
+						   <li><a href="#">反馈建议项目方案</a></li>
+						   <li><a href="#">将签完合同的需求方案转化为项目</a></li>
+					   </ul>
+					   <li class="active"><a href="#">项目管理</a></li>
+					   <ul class="nav nav-pills nav-stacked sub-menu">
+					   		<li><a href="customer_projectForm.html">查看项目进度</a></li>
+					   </ul>
+					   <li class="active"><a href="#">客服账户信息管理</a></li>
+					   <ul class="nav nav-pills nav-stacked sub-menu">
+						   <li><a href="customer_showInfo.html">查询个人信息</a></li>
+						   <li><a href="#">编辑个人信息</a></li>
+						   <li><a href="customer_securityManagement.html">账号安全管理</a></li>
+					   </ul>
+					</ul>
+				</div>
+				<div class="col-md-10 column content">
+					<div class="row">
+						<div class="breadcrumb col-xs-12">
+							<ul>	
+								<li><b>客服账户信息管理</b></li>
+								<li><b> >编辑个人信息</b></li>
+							</ul>
+						</div>
+						<div class="baseInfo col-md-12">
+							<h2>编辑客户信息</h2>
+							<div class="row ">
+								<div class="col-md-12 column">
+									<form class="form-horizontal" role="form">
+									   <div class="form-group">
+									      <label for="account" class="col-sm-2 control-label">用户名</label>
+									      <div class="col-sm-10">
+									         <input type="text" class="form-control" class="show_info_account" id="account" 
+									            placeholder="请输入账号" disabled>
+									      </div>
+									   </div>
+									   <div class="form-group">
+									      <label for="account" class="col-sm-2 control-label">密码</label>
+									      <div class="col-sm-10">
+									         <input type="text" class="form-control" class="show_info_pwd" id="account" 
+									            placeholder="请输入密码" disabled>
+									      </div>
+									   </div>
+									   <div class="form-group">
+									      <label for="name" class="col-sm-2 control-label">客服姓名</label>
+									      <div class="col-sm-10">
+									         <input type="text" class="form-control" class="show_info_name" id="name" 
+									            placeholder="请输入姓名">
+									      </div>
+									   </div>
+									   <div class="form-group">
+									      <label for="lastname" class="col-sm-2 control-label">性别</label>
+									      <div class="col-sm-10">
+									         <select class="form-control">
+										         <option>男</option>
+										         <option>女</option>
+										     </select>
+									      </div>
+									   </div>
+									   <div class="form-group">
+									      <label for="firstname" class="col-sm-2 control-label">电话</label>
+									      <div class="col-sm-10">
+									         <input type="text" class="form-control" class="show_info_phone" id="tel" 
+									            placeholder="请输入电话">
+									      </div>
+									   </div>
+									   <div class="form-group">
+									      <label for="lastname" class="col-sm-2 control-label">邮箱</label>
+									      <div class="col-sm-10">
+									         <input type="text" class="form-control" class="show_info_email" id="email" 
+									            placeholder="请输入邮箱">
+									      </div>
+									   </div>
+									</form>
+								</div>
+							</div>	
+						</div>
+						<div class="modify-btn col-md-12">
+							<button type="button" class="btn btn-info col-xs-12 info_btn">提交</button>
+						</div>	
+					</div>
+					
+				</div>
+			</div>
+		</div>
+
+		<!-- footer-->
+		
+		<script>
+			$(document).ready(function(){
+			 var minHeight = $(window).height()-70;
+			 var contentHeight = $(".main-container").height();
+			 if(minHeight < contentHeight){
+			 	$(".sidebar").css("height",contentHeight);
+			 }else{
+			 	$(".sidebar").css("height",minHeight);
+			 }
+			})
+		</script>
+	</body>
+
+</html>
